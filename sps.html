@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sps</title>
+    <link rel="stylesheet" href="sps.css">
+</head>
+<body>
+    <p class="heading">Rock Paper Scissors</p>
+    <button class="move-button  js-rock-button"><img src="images/rock.png" alt="" class="icon"></button>
+
+    <button class="move-button js-paper-button"><img src="images/paper.png" alt="" class="icon"></button>
+
+    <button  class="move-button js-scissors-button"><img src="images/scissors.png" alt="" class="icon"></button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves">
+       <!-- you
+        <img src="images/fist-emoji.jpg" alt=""  class="icon">
+        <img src="images/peace-emoji.jpg" alt="" class="icon">
+        computer--> 
+    </p>
+
+    <p class="js-score" class="score"></p>
+
+    <button onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    " class="reset-button">Reset Score</button>
+    <button onclick="autoplay()" class="auto-button">auto play</button>
+
+    <script src="sps.js"></script>
+</body>
+</html>
